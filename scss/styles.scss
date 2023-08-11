@@ -1,0 +1,19 @@
+@mixin linearGradient($clr-1: red, $clr-2: blue, $deg: -45deg) {
+  background-image: linear-gradient($deg, $clr-1, $clr-2);
+}
+
+body {
+  font-family: system-ui;
+  margin: 0;
+}
+
+.section-one,
+.section-two,
+.section-three {
+  text-align: center;
+  padding: 10vh 0;
+}
+
+.section-one {
+  @include linearGradient(-1, -2);
+}
