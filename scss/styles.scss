@@ -1,4 +1,4 @@
-@mixin linearGradient($clr-1: red, $clr-2: blue, $deg: -45deg) {
+@mixin linear-gradient($deg: -45deg, $clr-1: red, $clr-2: blue) {
   background-image: linear-gradient($deg, $clr-1, $clr-2);
 }
 
@@ -15,5 +15,16 @@ body {
 }
 
 .section-one {
-  @include linearGradient(-1, -2);
+  color: #fff;
+  @include linear-gradient;
+}
+
+.section-two {
+  color: #fff;
+  @include linear-gradient($deg: -75deg, $clr-1: green, $clr-2: yellow);
+}
+
+.section-three {
+  color: #fff;
+  @include linear-gradient($deg: 45deg, $clr-1: purple, $clr-2: gold);
 }
