@@ -63,7 +63,7 @@ body {
 }
 
 .button-two {
-  @include ui-element(1.5em 3.25em, blue, gray, gray, blue);
+  @include ui-element(0.75em 3em, blue, gray, gray, blue);
 }
 
 .badge-one {
