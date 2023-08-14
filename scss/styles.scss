@@ -15,6 +15,12 @@
   padding: $size;
   color: $color;
   background-color: $bg-color;
+
+  &:hover,
+  &:focus {
+    color: $hover-color;
+    background-color: $hover-bg-color;
+  }
 }
 
 body {
@@ -50,4 +56,22 @@ body {
 .section-three {
   color: #fff;
   @include linear-gradient($deg: 45deg, $clr-1: purple, $clr-2: gold);
+}
+
+.button-one {
+  @include ui-element(1em 3em, yellow, red, red, yellow);
+}
+
+.button-two {
+  @include ui-element(1.5em 3.25em, blue, gray, gray, blue);
+}
+
+.badge-one {
+  display: inline-block;
+  @include ui-element(0.25em 0.75em, white, black, black, white);
+}
+
+.badge-two {
+  display: inline-block;
+  @include ui-element(0.5em 1.25em, black, white, white, black);
 }

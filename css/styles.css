@@ -34,4 +34,46 @@ body {
   background-image: linear-gradient(45deg, purple, gold);
 }
 
+.button-one {
+  padding: 1em 3em;
+  color: yellow;
+  background-color: red;
+}
+.button-one:hover, .button-one:focus {
+  color: red;
+  background-color: yellow;
+}
+
+.button-two {
+  padding: 1.5em 3.25em;
+  color: blue;
+  background-color: gray;
+}
+.button-two:hover, .button-two:focus {
+  color: gray;
+  background-color: blue;
+}
+
+.badge-one {
+  display: inline-block;
+  padding: 0.25em 0.75em;
+  color: white;
+  background-color: black;
+}
+.badge-one:hover, .badge-one:focus {
+  color: black;
+  background-color: white;
+}
+
+.badge-two {
+  display: inline-block;
+  padding: 0.5em 1.25em;
+  color: black;
+  background-color: white;
+}
+.badge-two:hover, .badge-two:focus {
+  color: white;
+  background-color: black;
+}
+
 /*# sourceMappingURL=styles.css.map */
